@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6F3998209347EC0002A203 /* NSString+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F3997209347EC0002A203 /* NSString+CPRAddition.m */; };
+		1A6F399E20934A810002A203 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F399D20934A810002A203 /* GTMBase64.m */; };
+		1A6F39A12093518F0002A203 /* NSDate+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6F39A02093518F0002A203 /* NSDate+CPRAddition.m */; };
 		6D932DAA20930B830090AB40 /* UIView+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D932DA920930B830090AB40 /* UIView+CPRAddition.m */; };
 		6D932DAD20931BCE0090AB40 /* UIColor+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D932DAC20931BCE0090AB40 /* UIColor+CPRAddition.m */; };
 		6D981ABF2092FFF60056D347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981ABE2092FFF60056D347 /* AppDelegate.m */; };
@@ -38,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A6F3996209347EC0002A203 /* NSString+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CPRAddition.h"; sourceTree = "<group>"; };
+		1A6F3997209347EC0002A203 /* NSString+CPRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CPRAddition.m"; sourceTree = "<group>"; };
+		1A6F399B20934A810002A203 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		1A6F399C20934A810002A203 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		1A6F399D20934A810002A203 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		1A6F399F2093518F0002A203 /* NSDate+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+CPRAddition.h"; sourceTree = "<group>"; };
+		1A6F39A02093518F0002A203 /* NSDate+CPRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CPRAddition.m"; sourceTree = "<group>"; };
 		6D932DA820930B830090AB40 /* UIView+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CPRAddition.h"; sourceTree = "<group>"; };
 		6D932DA920930B830090AB40 /* UIView+CPRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CPRAddition.m"; sourceTree = "<group>"; };
 		6D932DAB20931BCE0090AB40 /* UIColor+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CPRAddition.h"; sourceTree = "<group>"; };
@@ -88,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6F399920934A340002A203 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1A6F399A20934A810002A203 /* GTMBase64 */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1A6F399A20934A810002A203 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				1A6F399B20934A810002A203 /* GTMBase64.h */,
+				1A6F399C20934A810002A203 /* GTMDefines.h */,
+				1A6F399D20934A810002A203 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
 		6D981AB12092FFF60056D347 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				6D932DAE209323D40090AB40 /* CPRExtensionMacro.h */,
+				1A6F399920934A340002A203 /* Library */,
 				6D981AF1209300740056D347 /* Foundation */,
 				6D981AF0209300470056D347 /* UIKit */,
 			);
@@ -169,6 +198,10 @@
 			children = (
 				6D981AF2209300BB0056D347 /* NSDictionary+CPRAddition.h */,
 				6D981AF3209300BB0056D347 /* NSDictionary+CPRAddition.m */,
+				1A6F3996209347EC0002A203 /* NSString+CPRAddition.h */,
+				1A6F3997209347EC0002A203 /* NSString+CPRAddition.m */,
+				1A6F399F2093518F0002A203 /* NSDate+CPRAddition.h */,
+				1A6F39A02093518F0002A203 /* NSDate+CPRAddition.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -309,9 +342,12 @@
 				6D981AF4209300BB0056D347 /* NSDictionary+CPRAddition.m in Sources */,
 				6D981AC22092FFF60056D347 /* ViewController.m in Sources */,
 				6D932DAA20930B830090AB40 /* UIView+CPRAddition.m in Sources */,
+				1A6F399E20934A810002A203 /* GTMBase64.m in Sources */,
+				1A6F3998209347EC0002A203 /* NSString+CPRAddition.m in Sources */,
 				6D932DAD20931BCE0090AB40 /* UIColor+CPRAddition.m in Sources */,
 				6D981ACD2092FFF60056D347 /* main.m in Sources */,
 				6D981ABF2092FFF60056D347 /* AppDelegate.m in Sources */,
+				1A6F39A12093518F0002A203 /* NSDate+CPRAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -87,9 +87,9 @@
 }
 
 - (void)cpr_removeAllSubViews {
-    while (self.subviews.count != 0) {
-        [self.subviews.lastObject removeFromSuperview];
-    }
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
 }
 
 - (void)cpr_setCornerRadius:(CGFloat)radius {
