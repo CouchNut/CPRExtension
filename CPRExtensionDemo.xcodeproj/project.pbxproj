@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D932DAA20930B830090AB40 /* UIView+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D932DA920930B830090AB40 /* UIView+CPRAddition.m */; };
+		6D932DAD20931BCE0090AB40 /* UIColor+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D932DAC20931BCE0090AB40 /* UIColor+CPRAddition.m */; };
 		6D981ABF2092FFF60056D347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981ABE2092FFF60056D347 /* AppDelegate.m */; };
 		6D981AC22092FFF60056D347 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981AC12092FFF60056D347 /* ViewController.m */; };
 		6D981AC52092FFF60056D347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D981AC32092FFF60056D347 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		6D981ACD2092FFF60056D347 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981ACC2092FFF60056D347 /* main.m */; };
 		6D981AD72092FFF70056D347 /* CPRExtensionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981AD62092FFF70056D347 /* CPRExtensionDemoTests.m */; };
 		6D981AE22092FFF70056D347 /* CPRExtensionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981AE12092FFF70056D347 /* CPRExtensionDemoUITests.m */; };
+		6D981AF4209300BB0056D347 /* NSDictionary+CPRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D981AF3209300BB0056D347 /* NSDictionary+CPRAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D932DA820930B830090AB40 /* UIView+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CPRAddition.h"; sourceTree = "<group>"; };
+		6D932DA920930B830090AB40 /* UIView+CPRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CPRAddition.m"; sourceTree = "<group>"; };
+		6D932DAB20931BCE0090AB40 /* UIColor+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CPRAddition.h"; sourceTree = "<group>"; };
+		6D932DAC20931BCE0090AB40 /* UIColor+CPRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CPRAddition.m"; sourceTree = "<group>"; };
+		6D932DAE209323D40090AB40 /* CPRExtensionMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPRExtensionMacro.h; sourceTree = "<group>"; };
 		6D981ABA2092FFF60056D347 /* CPRExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPRExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D981ABD2092FFF60056D347 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D981ABE2092FFF60056D347 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +59,8 @@
 		6D981ADD2092FFF70056D347 /* CPRExtensionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPRExtensionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D981AE12092FFF70056D347 /* CPRExtensionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPRExtensionDemoUITests.m; sourceTree = "<group>"; };
 		6D981AE32092FFF70056D347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D981AF2209300BB0056D347 /* NSDictionary+CPRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CPRAddition.h"; sourceTree = "<group>"; };
+		6D981AF3209300BB0056D347 /* NSDictionary+CPRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CPRAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		6D981ABC2092FFF60056D347 /* CPRExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6D981AEF2093003B0056D347 /* CPRExtension */,
 				6D981ABD2092FFF60056D347 /* AppDelegate.h */,
 				6D981ABE2092FFF60056D347 /* AppDelegate.m */,
 				6D981AC02092FFF60056D347 /* ViewController.h */,
@@ -130,6 +141,36 @@
 				6D981AE32092FFF70056D347 /* Info.plist */,
 			);
 			path = CPRExtensionDemoUITests;
+			sourceTree = "<group>";
+		};
+		6D981AEF2093003B0056D347 /* CPRExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6D932DAE209323D40090AB40 /* CPRExtensionMacro.h */,
+				6D981AF1209300740056D347 /* Foundation */,
+				6D981AF0209300470056D347 /* UIKit */,
+			);
+			path = CPRExtension;
+			sourceTree = "<group>";
+		};
+		6D981AF0209300470056D347 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6D932DA820930B830090AB40 /* UIView+CPRAddition.h */,
+				6D932DA920930B830090AB40 /* UIView+CPRAddition.m */,
+				6D932DAB20931BCE0090AB40 /* UIColor+CPRAddition.h */,
+				6D932DAC20931BCE0090AB40 /* UIColor+CPRAddition.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		6D981AF1209300740056D347 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6D981AF2209300BB0056D347 /* NSDictionary+CPRAddition.h */,
+				6D981AF3209300BB0056D347 /* NSDictionary+CPRAddition.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D981AF4209300BB0056D347 /* NSDictionary+CPRAddition.m in Sources */,
 				6D981AC22092FFF60056D347 /* ViewController.m in Sources */,
+				6D932DAA20930B830090AB40 /* UIView+CPRAddition.m in Sources */,
+				6D932DAD20931BCE0090AB40 /* UIColor+CPRAddition.m in Sources */,
 				6D981ACD2092FFF60056D347 /* main.m in Sources */,
 				6D981ABF2092FFF60056D347 /* AppDelegate.m in Sources */,
 			);
@@ -431,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXW5DZ2P98;
 				INFOPLIST_FILE = CPRExtensionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CPRExtension.CPRExtensionDemo;
@@ -444,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GXW5DZ2P98;
 				INFOPLIST_FILE = CPRExtensionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CPRExtension.CPRExtensionDemo;
