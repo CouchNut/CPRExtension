@@ -20,6 +20,11 @@
 @property(nonatomic) CGSize size;
 
 /**
+ 获取当前view所在的控制器
+ */
+- (__kindof UIViewController *)viewController;
+
+/**
  移除所有的 subView
  */
 - (void)cpr_removeAllSubViews;

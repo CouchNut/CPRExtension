@@ -86,6 +86,16 @@
     return self.frame.size;
 }
 
+- (__kindof UIViewController *)viewController {
+    for (UIView *nextView = [self superview]; nextView; nextView = nextView.superview) {
+        UIResponder *nextResponder = [nextView nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
+
 - (void)cpr_removeAllSubViews {
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj removeFromSuperview];
