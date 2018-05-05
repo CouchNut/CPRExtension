@@ -17,7 +17,7 @@
 }
 
 - (CGFloat)originY {
-    return self.frame.origin.y;
+    return CGRectGetMinY(self.frame);
 }
 
 - (void)setOriginX:(CGFloat)originX {
@@ -27,7 +27,7 @@
 }
 
 - (CGFloat)originX {
-    return self.frame.origin.x;
+    return CGRectGetMinX(self.frame);
 }
 
 - (void)setCenterX:(CGFloat)centerX {
@@ -35,7 +35,7 @@
 }
 
 - (CGFloat)centerX {
-    return self.center.x;
+    return CGRectGetMidX(self.frame);
 }
 
 - (void)setCenterY:(CGFloat)centerY {
@@ -43,7 +43,7 @@
 }
 
 - (CGFloat)centerY {
-    return self.center.y;
+    return CGRectGetMidY(self.frame);
 }
 
 - (void)setWidth:(CGFloat)width {
@@ -53,7 +53,7 @@
 }
 
 - (CGFloat)width {
-    return self.frame.size.width;
+    return CGRectGetWidth(self.frame);
 }
 
 - (void)setHeight:(CGFloat)height {
@@ -63,7 +63,7 @@
 }
 
 - (CGFloat)height {
-    return self.frame.size.height;
+    return CGRectGetHeight(self.frame);
 }
 
 - (void)setOrigin:(CGPoint)origin {
