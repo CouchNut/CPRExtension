@@ -111,6 +111,10 @@
 }
 
 - (void)cpr_setCornerRadius:(CGFloat)radius boderColor:(UIColor *)color borderWidth:(CGFloat)borderWidth {
+    [self cpr_setCornerRadius:radius boderColor:color borderWidth:borderWidth byRoundingCorners:UIRectCornerAllCorners];
+}
+
+- (void)cpr_setCornerRadius:(CGFloat)radius boderColor:(UIColor *)color borderWidth:(CGFloat)borderWidth byRoundingCorners:(UIRectCorner)corner {
     CGRect frame = CGRectMake(0, 0, self.width, self.height);
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
     maskLayer.frame = frame;
@@ -121,7 +125,9 @@
     shapeLayer.strokeColor = color.CGColor;
     shapeLayer.lineWidth = borderWidth;
     
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:frame cornerRadius:radius];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:frame
+                                               byRoundingCorners:corner
+                                                     cornerRadii:CGSizeMake(radius, radius)];
     shapeLayer.path = path.CGPath;
     maskLayer.path = path.CGPath;
     

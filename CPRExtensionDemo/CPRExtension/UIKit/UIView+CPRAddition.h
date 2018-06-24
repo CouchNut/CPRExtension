@@ -53,4 +53,14 @@
  */
 - (void)cpr_setCornerRadius:(CGFloat)radius boderColor:(UIColor *)color borderWidth:(CGFloat)borderWidth;
 
+/**
+ 设置 UIView 某个顶角的弧度、边框颜色、边框宽度
+
+ @param radius 弧度
+ @param color 边框颜色
+ @param borderWidth 边框宽度
+ @param corner 需要设置为圆角的那个角
+ */
+- (void)cpr_setCornerRadius:(CGFloat)radius boderColor:(UIColor *)color borderWidth:(CGFloat)borderWidth byRoundingCorners:(UIRectCorner)corner;
+
 @end
